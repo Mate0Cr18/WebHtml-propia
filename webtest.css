@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    background-color: rgb(248, 156, 51);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #380766;
+    color: rgb(206, 51, 159);
+    text-align: center;
+    padding: 1em 0;
+}
+
+#principal{
+    background-color: #464646;
+}
+
+#principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#principal ul li {
+    margin: 0;
+}
+#principal ul li a {
+    color: rgb(81, 172, 224);
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+#principal ul li a:hover {
+    background-color: #1b1b1b;
+}
+#secundario{
+    background-color: blue;
+}
+#secundario ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#secundario ul li{
+    margin: 0;
+}
+#secundario ul li a{
+    color: white;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+#secundario ul li a:hover{
+    background-color: red;
+    color: black;
+}
+
+
+main {
+    flex: 1;
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+    border-radius:40px;
+    border: 5px solid #e4d50e;
+}
+
+footer {
+    background-color: #2b2a2a;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

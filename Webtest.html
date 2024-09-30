@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Personalizada</title>
+    <link rel="stylesheet" href="webtest.css">
+    <script defer src="web.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tienda Personalizada</h1>
+    </header>
+    <nav id="principal">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav id="secundario">
+        <ul>
+            <li><a href="#" onclick="loadPage('cuadro_diamante.html')">Cuadro de Diamante</a></li>
+            <li><a href="#" onclick="loadPage('chips.html')">Chips</a></li>
+            <li><a href="#" onclick="loadPage('marcapaginas.html')">Marcapáginas</a></li>
+            <li><a href="#" onclick="loadPage('funda_movil.html')">Fundas de Móvil</a></li>
+            <li><a href="#" onclick="loadPage('pegatinas.html')">Pegatinas personalizadas</a></li>
+            <li><a href="#" onclick="loadPage('llaveros_personalizados.html')">Llaveros Personalizados</a></li>
+        </ul>
+    </nav>
+    <div id="cart">
+        <button onclick="toggleCart()">🛒 Carrito (<span id="cart-count">0</span>)</button>
+    </div>
+    <section id="home">
+        <h2>Inicio</h2>
+        <p>Bienvenidos a nuestra tienda donde encontrarás productos personalizados únicos.</p>
+    </section>
+    <main id="products">
+    </main>
+    <section id="cart-items" class="hidden">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: <span id="cart-total">0.00</span>€</p>
+        <button onclick="purchase()">Comprar</button>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos en: info@tiendapersonalizada.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tienda Personalizada. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
